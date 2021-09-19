@@ -1,6 +1,6 @@
 # Site API 
 
-# GET /uc/coin_lists
+## GET /uc/coin_lists
 获取用户资产列表
 
 返回示例:
@@ -23,9 +23,53 @@
 ```
 
 字段说明
+ * coin: 币名
+ * display_name: 币种显示名
+ * symbol: 币符
+ * space: 空间大小 (单位: EiB)
  * earnings_24h: 最近24小时收益
  * earnings_usd_24h: 最近24小时收益(美元)
  * status: 状态(0: 未启用,1: 耕种中)
 
+
+## GET /market/coins
+获取各币种收益率列表
+
+```
+{
+    "coins": [
+        {
+            "coin": "chaingreen",
+            "display_name": "Chaingreen",
+            "icon": "https://assets.alltheblocks.net/icons/forks/chaingreen.png",
+            "symbol": "cgn",
+            "space": 0.563,
+            "space_change": 0.01,
+            "height": 629510,
+            "reward": 2,
+            "price": 200,
+            "hourly_earnings": 0.1,
+            "hourly_earnings_usd": 12,
+            "daily_earnings": 2,
+            "daily_earnings_usd": 160,
+            "monthly_earnings": 60,
+            "monthly_earnings_usd": 2000,
+            "etw": 3600,
+        }
+    ]
+}
+```
+
+字段说明
+  * coin: 币名
+  * display_name: 币种显示名
+  * symbol: 币符
+  * space_change: 空间变化 (百分比)
+  * height: 高度
+  * reward: 奖励
+  * price: 价格(美元)
+  * hourly_earnings: 小时收益
+  * hourly_earnings_usd: 小时收益(美元)
+  * etw: 预计赢得奖励时间
 ## Authenticate
 Authorization
