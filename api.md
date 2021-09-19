@@ -66,8 +66,8 @@
 字段说明
 * coin: 币名
 * type: 交易类型 (1: 耕种奖励, 2: 提现)
+* amount: 金额
 * address: 外部钱包地址 (提现)
-* space: 空间大小 (单位: EiB)
 * processed_at: 最近24小时收益
 
 ## GET /market/coins
