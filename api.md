@@ -115,5 +115,31 @@ DELETE /uc/addresses/c53ekv59481d1i62bncg
 ```
 
 
+## GET /uc/payouts
+提现记录
+
+```
+{
+    "payouts": [
+        {
+            "id": "111",
+            "coin": "chia",
+            "icon": "https://assets.alltheblocks.net/icons/forks/spare.png",
+            "symbol": "spare",
+            "amount": 2,
+            "to_address": "xch1nxtu7cw7f8dl8kucljf4e9r3mdyued2g8wlx75cqplxsnksfkq5swld3dd",
+            "processed": true,
+            "created_at": "2021-09-19T16:32:28+08:00"
+        }
+    ]
+}
+```
+
+字段说明
+ * amount: 提现金额
+ * to_address: 收款地址
+ * processed: 是否处理
+
+
 ## Authenticate
 Authorization
