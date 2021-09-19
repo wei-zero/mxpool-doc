@@ -104,9 +104,9 @@ DELETE /uc/addresses/c53ekv59481d1i62bncg
         {
             "id": "c53ekv59481d1i62bncg",
             "name": "我的chia钱包",
-            "coin": "",
-            "icon": "",
-            "symbol": "",
+            "coin": "chia",
+            "icon": "https://assets.alltheblocks.net/icons/forks/chia.png",
+            "symbol": "xch",
             "address": "xch1nxtu7cw7f8dl8kucljf4e9r3mdyued2g8wlx75cqplxsnksfkq5swld3dd",
             "created_at": "2021-09-19T15:45:01+08:00"
         }
