@@ -87,6 +87,15 @@
   * name: 备注名
   * address: 地址
 
+## DELETE /uc/addresses/:id
+
+删除钱包地址
+
+请求示例:
+```
+DELETE /uc/addresses/c53ekv59481d1i62bncg
+```
+
 ## GET /uc/addresses
 获取用户外部钱包地址
 ```
