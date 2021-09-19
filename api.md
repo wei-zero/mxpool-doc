@@ -141,5 +141,27 @@ DELETE /uc/addresses/c53ekv59481d1i62bncg
  * processed: 是否处理
 
 
+## GET /uc/partials
+查询贡献点
+
+```
+{
+    "partials": [
+        {
+            "timestamp": 1632041216965,
+            "difficulty": 10,
+            "harvester_id": "abcd",
+            "proof": "akdlskj39we"
+        }
+    ]
+}
+```
+
+字段说明
+ * timestamp: 时间戳
+ * difficulty: 难度
+ * harvester_id: 收割机
+ * proof: 证明
+
 ## Authenticate
 Authorization
