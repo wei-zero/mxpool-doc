@@ -32,6 +32,44 @@
  * status: 状态(0: 未启用,1: 耕种中)
 
 
+## GET /uc/transactions
+获取账单流水
+
+返回示例:
+```
+{
+    "transactions": [
+        {
+            "id": "1",
+            "coin": "chia",
+            "icon": "https://assets.alltheblocks.net/icons/forks/chia.png",
+            "symbol": "xch",
+            "type": 1,
+            "amount": 2,
+            "address": "",
+            "processed_at": "2021-09-19T17:25:31+08:00"
+        },
+        {
+            "id": "2",
+            "coin": "chia",
+            "icon": "https://assets.alltheblocks.net/icons/forks/chia.png",
+            "symbol": "xch",
+            "type": 2,
+            "amount": 20,
+            "address": "",
+            "processed_at": "2021-09-19T17:26:04+08:00"
+        }
+    ]
+}
+```
+
+字段说明
+* coin: 币名
+* type: 交易类型 (1: 耕种奖励, 2: 提现)
+* address: 外部钱包地址 (提现)
+* space: 空间大小 (单位: EiB)
+* processed_at: 最近24小时收益
+
 ## GET /market/coins
 获取各币种收益率列表
 
