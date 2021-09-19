@@ -71,5 +71,40 @@
   * hourly_earnings: 小时收益
   * hourly_earnings_usd: 小时收益(美元)
   * etw: 预计赢得奖励时间
+
+
+## POST /uc/addresses
+创建新外部钱包地址
+
+请求示例:
+```
+{
+    "name": "我的chia钱包",
+    "address": "xch12szpttkl37gl26ndhsme5hdw2lpf6drf3y62u8tljj804fx7jmcszeedfp"
+}
+```
+字段说明
+  * name: 备注名
+  * address: 地址
+
+## GET /uc/addresses
+获取用户外部钱包地址
+```
+{
+    "addresses": [
+        {
+            "id": "c53ekv59481d1i62bncg",
+            "name": "我的chia钱包",
+            "coin": "",
+            "icon": "",
+            "symbol": "",
+            "address": "xch1nxtu7cw7f8dl8kucljf4e9r3mdyued2g8wlx75cqplxsnksfkq5swld3dd",
+            "created_at": "2021-09-19T15:45:01+08:00"
+        }
+    ]
+}
+```
+
+
 ## Authenticate
 Authorization
