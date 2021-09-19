@@ -163,5 +163,31 @@ DELETE /uc/addresses/c53ekv59481d1i62bncg
  * harvester_id: 收割机
  * proof: 证明
 
+
+## GET /uc/harvesters
+获取收割机列表
+
+响应示例:
+```
+{
+    "harvesters": [
+        {
+            "id": "11",
+            "name": "wei-Legion",
+            "plots": 98,
+            "is_online": true,
+            "created_at": "2021-09-19T16:57:58Z",
+            "updated_at": "2021-09-19T16:57:58Z"
+        }
+    ]
+}
+```
+
+字段说明
+ * id: ID
+ * name: 主机名
+ * plots: 图数
+ * is_online: 是否在线
+ 
 ## Authenticate
 Authorization
