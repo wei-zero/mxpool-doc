@@ -188,6 +188,33 @@ DELETE /uc/addresses/c53ekv59481d1i62bncg
  * name: 主机名
  * plots: 图数
  * is_online: 是否在线
- 
+
+## GET /uc/configuration
+
+获取配置(FarmerKey)
+
+```
+{
+    "farmer_key": "9a38901bfe8a936957db1422c83403c088f04509f0e4d5581312b0cdc21e0304_5dbd52248c0909ddb20f677d96b135bbe26e244d37c94ae00a641c7d2ae24499"
+}
+```
+
+
+## GET /uc/login_logs
+获取登录日志 
+
+响应示例:
+```
+{
+    "login_logs": [
+        {
+            "id": "aaa",
+            "ip": "139.227.3.56",
+            "login_at": "2021-09-19T17:18:24+08:00"
+        }
+    ]
+}
+```
+
 ## Authenticate
 Authorization
